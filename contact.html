@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اتصل بي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 1px solid #4CAF50;
+    }
+
+    .contact-form button {
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="contact-form" action="https://formspree.io/f/xgvlwzan" method="POST">
+    <h2>📩 راسلني</h2>
+
+    <label for="name">الاسم</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">الرسالة</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">إرسال</button>
+  </form>
+
+</body>
+</html>
